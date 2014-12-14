@@ -8,6 +8,12 @@
     
     <link rel="stylesheet" type="text/css" href="./css/localizationStyle.css" />
 
+    <style type="text/css">
+        #Reset1 {
+            width: 62px;
+        }
+    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -89,43 +95,40 @@
 
             <br /><br />
 
-            <asp:Button ID="btn_submit" runat="server" Text="Submit" />
+            <asp:Button ID="btn_submit" runat="server" Text="Submit" />&nbsp;&nbsp;<asp:Button ID="btn_ClearForm" runat="server" Text="Clear" />
             
-            <br /> <br />
-
-            <div id="results">
-
-            <% If IsPostBack Then%>
-
-                <asp:Label ID="lbl_Hello" runat="server" Text="<%$ Resources:Resource, Hello %>"></asp:Label>
+            <p>
+            <asp:Label ID="lbl_Hello" runat="server" Text="<%$ Resources:Resource, Hello %>"></asp:Label>
             
-                <asp:Label ID="lbl_salutation" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="lbl_salutation" runat="server" Text=""></asp:Label>
 
-                <asp:Label ID="lbl_nameEntered" runat="server" Text="Label"></asp:Label>,
+            <asp:Label ID="lbl_nameEntered" runat="server" Text=""></asp:Label><asp:Label ID="lbl_comma" runat="server" Text=","></asp:Label>
 
-                <br /><br />
+            <br /><br />
 
-                <asp:Label ID="lbl_GreatDay" runat="server" Text="<%$ Resources:Resource, GreatDay %>"></asp:Label>
+            <asp:Label ID="lbl_GreatDay" runat="server" Text="<%$ Resources:Resource, GreatDay %>"></asp:Label>
             
-                <asp:Label ID="lbl_gradDateEntered" runat="server" Text="Label"></asp:Label>!
+            <asp:Label ID="lbl_gradDateEntered" runat="server" Text="Label"></asp:Label><asp:Label ID="lbl_ExplPoint" runat="server" Text="!"></asp:Label>
 
-                <br /><br />
+            <br /><br />
 
-                <asp:Label ID="lbl_HopeYouEarn" runat="server" Text="<%$ Resources:Resource, HopeYouEarn %>"></asp:Label>
+            <asp:Label ID="lbl_HopeYouEarn" runat="server" Text="<%$ Resources:Resource, HopeYouEarn %>"></asp:Label>
 
-                <asp:Label ID="currencyLabel" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="currencyLabel" runat="server" Text="Label"></asp:Label>
 
-                <asp:Label ID="lbl_Salary" runat="server" Text="<%$ Resources:Resource, Salary %>"></asp:Label>
+            <asp:Label ID="lbl_Salary" runat="server" Text="<%$ Resources:Resource, Salary %>"></asp:Label>
 
-                <br /><br />
+            <br /><br />
             
-                <asp:Label ID="lbl_Visit" runat="server" Text="<%$ Resources:Resource, PleaseVisit %>"></asp:Label>
+            <asp:Label ID="lbl_Visit" runat="server" Text="<%$ Resources:Resource, PleaseVisit %>"></asp:Label>
             
-                <asp:HyperLink ID="link_GitHub" runat="server" NavigateUrl="https://github.com/ajkisling">GitHub</asp:HyperLink>.
+            <asp:HyperLink ID="link_GitHub" runat="server" NavigateUrl="https://github.com/ajkisling">GitHub</asp:HyperLink><asp:Label ID="lbl_period" runat="server" Text="."></asp:Label>
+            
+            </p>
+            
+            <br /><br /><br /> 
 
-            <% End If%>
-
-            </div>
+            <asp:Button ID="btn_ReturnToForm" runat="server" Text="Go Back" />           
 
         </div>  <!-- close content div -->            
 
