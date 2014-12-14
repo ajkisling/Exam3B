@@ -1,0 +1,84 @@
+﻿body {
+    text-align: center;
+    font-family: 'Segoe UI';
+    background-color:#2F3A7F;
+    background-image:url("/welcomepage.jpg");
+}
+
+h1 {
+    font-size:48pt;
+}
+
+h2 {
+    font-size:36pt;
+}
+
+h4 {
+    font-size:14pt;
+    height:34px;
+}
+
+#form1 {
+    width:80%;
+    background-color:#AAB6FF;
+    margin: 0 auto;
+}
+
+#languageDropDown {
+    width:30%;
+    float:left;
+    text-align:center;
+    background-color:#858BFF;
+    height:100%;
+    margin: 0 auto;
+}
+
+#ddl_language {
+    font-size:16px;
+    width:40%;
+}
+
+#content {
+    width:60%;
+    float:left;
+    background-color:#D1D3FF;
+    margin: 0 auto;
+    height:100%;
+    text-align:left;
+    padding-left:10%;
+}
+
+#calendar {
+    width:35%;
+    padding:15px;
+
+}
+
+#body {
+    height:650px;
+}
+
+#gender {
+    width:100%;
+    float:left;
+    padding:15px;
+    height:30px;
+    margin: 0 auto;
+}
+
+#genderLabel {
+    width:10%;
+    float:left;
+    height:30px;
+}
+
+
+#genderRadioButtons {
+    width:30%;
+    float:left;
+    height:30px;
+}
+
+#name {
+    padding:15px;
+}
