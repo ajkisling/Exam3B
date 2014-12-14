@@ -135,11 +135,26 @@
   <data name="GradDate" xml:space="preserve">
     <value>أخطط لتخريج على:</value>
   </data>
+  <data name="GreatDay" xml:space="preserve">
+    <value>آمل أن يكون لديك يوم عظيم عند التخرج على</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>مرحبا</value>
+  </data>
+  <data name="HopeYouEarn" xml:space="preserve">
+    <value>أتمنى لكم التوفيق في حياتك المهنية بعد التخرج. آمل أن تكسب</value>
+  </data>
   <data name="Male" xml:space="preserve">
     <value>ذكر</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>اسمي هو:</value>
+  </data>
+  <data name="PleaseVisit" xml:space="preserve">
+    <value>يرجى زيارة لي على</value>
+  </data>
+  <data name="Salary" xml:space="preserve">
+    <value>كما راتبا في أول وظيفة الخاص بك!</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>ترحيب MSCI: 3300</value>

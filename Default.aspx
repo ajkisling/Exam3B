@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_default" Culture="auto:en-US" UICulture="auto"%>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_default" Culture="auto:en-US" UICulture="auto" %>
 
 <!DOCTYPE html>
 
@@ -43,6 +43,8 @@
 
         <div id="content">
 
+            <asp:ScriptManager ID="sm1" runat="server" EnablePartialRendering="true" />
+
             <div id="name">
 
                 <asp:Label ID="lbl_Name" runat="server" Text="<%$ Resources:Resource, Name %>"></asp:Label>
@@ -58,29 +60,74 @@
                 </div>  <!-- close genderLabel div -->
 
                 <div id="genderRadioButtons">
-                    <asp:RadioButtonList ID="rbl_gender" runat="server" RepeatDirection="Horizontal">
-                        <asp:ListItem Text="<%$ Resources:Resource, Female %>"></asp:ListItem>
-                        <asp:ListItem Text="<%$ Resources:Resource, Male %>"></asp:ListItem>
+                    <asp:RadioButtonList ID="rbl_gender" runat="server" RepeatDirection="Horizontal" AutoPostBack="false">
+                        <asp:ListItem Text="<%$ Resources:Resource, Female %>" Value="Ms."></asp:ListItem>
+                        <asp:ListItem Text="<%$ Resources:Resource, Male %>" Value="Mr."></asp:ListItem>
                     </asp:RadioButtonList>
                 </div>  <!-- close genderRadioButtons div -->
 
             </div> <!-- close gender div -->
 
             <div id="calendar">
-
+                
                 <asp:Label ID="lbl_gradDate" runat="server" Text="<%$ Resources:Resource, GradDate %>"></asp:Label>
+
                 <br /> <br />
-                <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" RenderMode="Block">
+                        <ContentTemplate>
+                            <asp:Calendar ID="Calendar1" runat="server" ></asp:Calendar>
+                        </ContentTemplate>
+                    </asp:UpdatePanel> 
+                
 
             </div>  <!-- close calendar div -->
             
-                <asp:Label ID="lbl_earn" runat="server" Text="<%$ Resources:Resource, Earn %>"></asp:Label>
+            <asp:Label ID="lbl_earn" runat="server" Text="<%$ Resources:Resource, Earn %>"></asp:Label>
                 &nbsp;&nbsp;
-                <asp:TextBox ID="tb_earn" runat="server"></asp:TextBox>         
-                        
-            <asp:Label ID="currencyLabel" runat="server" Text="Label"></asp:Label>
-    
-        </div>  <!-- close content div -->
+            <asp:TextBox ID="tb_earn" runat="server" Width="128px"></asp:TextBox>                          
+
+            <br /><br />
+
+            <asp:Button ID="btn_submit" runat="server" Text="Submit" />
+            
+            <br /> <br />
+
+            <div id="results">
+
+            <% If IsPostBack Then%>
+
+                <asp:Label ID="lbl_Hello" runat="server" Text="<%$ Resources:Resource, Hello %>"></asp:Label>
+            
+                <asp:Label ID="lbl_salutation" runat="server" Text="Label"></asp:Label>
+
+                <asp:Label ID="lbl_nameEntered" runat="server" Text="Label"></asp:Label>,
+
+                <br /><br />
+
+                <asp:Label ID="lbl_GreatDay" runat="server" Text="<%$ Resources:Resource, GreatDay %>"></asp:Label>
+            
+                <asp:Label ID="lbl_gradDateEntered" runat="server" Text="Label"></asp:Label>!
+
+                <br /><br />
+
+                <asp:Label ID="lbl_HopeYouEarn" runat="server" Text="<%$ Resources:Resource, HopeYouEarn %>"></asp:Label>
+
+                <asp:Label ID="currencyLabel" runat="server" Text="Label"></asp:Label>
+
+                <asp:Label ID="lbl_Salary" runat="server" Text="<%$ Resources:Resource, Salary %>"></asp:Label>
+
+                <br /><br />
+            
+                <asp:Label ID="lbl_Visit" runat="server" Text="<%$ Resources:Resource, PleaseVisit %>"></asp:Label>
+            
+                <asp:HyperLink ID="link_GitHub" runat="server" NavigateUrl="https://github.com/ajkisling">GitHub</asp:HyperLink>.
+
+            <% End If%>
+
+            </div>
+
+        </div>  <!-- close content div -->            
 
      </div>  <!-- close body div -->
 

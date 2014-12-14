@@ -15,12 +15,20 @@ Partial Class _default
 
     End Sub
 
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Protected Sub btn_submit_Click(sender As Object, e As EventArgs) Handles btn_submit.Click
 
-        Dim money As Decimal = 65545.42
+        Dim money As Decimal = tb_earn.Text
+        Dim name As String = tb_Name.Text
+        Dim salutation As String = rbl_gender.SelectedValue
+        Dim gradDate As String = Calendar1.SelectedDate
+        Dim display As String = "Yes"
 
+        lbl_gradDateEntered.Text = gradDate
+        lbl_nameEntered.Text = name
+        lbl_salutation.Text = salutation
         currencyLabel.Text = String.Format("{0:c}", money)
 
     End Sub
 
 End Class
+

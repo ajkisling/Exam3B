@@ -135,11 +135,26 @@
   <data name="GradDate" xml:space="preserve">
     <value>我打算畢業的：</value>
   </data>
+  <data name="GreatDay" xml:space="preserve">
+    <value>我希望你有一個偉大的日子，當你畢業的</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>您好</value>
+  </data>
+  <data name="HopeYouEarn" xml:space="preserve">
+    <value>祝你順利畢業後，你的職業生涯。我希望你賺</value>
+  </data>
   <data name="Male" xml:space="preserve">
     <value>男</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>我的名字是：</value>
+  </data>
+  <data name="PleaseVisit" xml:space="preserve">
+    <value>請訪問我的</value>
+  </data>
+  <data name="Salary" xml:space="preserve">
+    <value>在你的第一份工作的薪水！</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>歡迎MSCI：3300</value>

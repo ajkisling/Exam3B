@@ -135,11 +135,26 @@
   <data name="GradDate" xml:space="preserve">
     <value>Tengo la intención de graduarse en:</value>
   </data>
+  <data name="GreatDay" xml:space="preserve">
+    <value>Espero que tengas un gran día cuando se gradúe en</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>¡Hola</value>
+  </data>
+  <data name="HopeYouEarn" xml:space="preserve">
+    <value>Te deseo lo mejor en su carrera después de la graduación. Espero que gane</value>
+  </data>
   <data name="Male" xml:space="preserve">
     <value>Masculino</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Mi nombre es:</value>
+  </data>
+  <data name="PleaseVisit" xml:space="preserve">
+    <value>Por favor, visite conmigo en</value>
+  </data>
+  <data name="Salary" xml:space="preserve">
+    <value>como un salario en su primer trabajo!</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenidos MSCI:3300</value>
